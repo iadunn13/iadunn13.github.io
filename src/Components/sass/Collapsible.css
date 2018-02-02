@@ -52,11 +52,17 @@ strong {
   position: relative;
   border: 1px solid white;
   padding: 10px;
-  background: #00ac9d;
+  background: #a9a9a9;
   color: white; }
   .Collapsible__trigger:after {
     font-family: 'FontAwesome';
     content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms; }
+  .Collapsible__trigger .collapse-icon {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -80,6 +86,3 @@ strong {
   font-size: 12px;
   background-color: #CBB700;
   color: black; }
-
-.code {
-  white-space: pre; }

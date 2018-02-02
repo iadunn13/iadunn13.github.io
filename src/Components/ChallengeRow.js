@@ -3,6 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Collapsible from './Collapsible.js';
 import { Well } from 'react-bootstrap';
+import LineOfCode from './LineOfCode.js';
 
 
 export default class ChallengeRow extends React.Component {
@@ -11,8 +12,11 @@ export default class ChallengeRow extends React.Component {
 
 		this.parseSolution = () => {
 			let solutionLines = this.props.solutionText.split('\r\n');
-			return _.map(solutionLines, line => (
-				<p className="code">{line}</p>
+			return _.map(solutionLines, (line, lineNumber) => (
+				<LineOfCode
+					code={line}
+					lineNumber={lineNumber}
+				/>
 			));
 		};
 
@@ -24,7 +28,7 @@ export default class ChallengeRow extends React.Component {
 				    <p><strong>My Solution:</strong></p>
 				    <Well bsSize="large">
 				    	{this.parseSolution()}
-				    </Well> 
+				    </Well>
 				</Collapsible>
 			);
 		};

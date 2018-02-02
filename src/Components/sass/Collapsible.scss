@@ -81,13 +81,21 @@ strong {
   position: relative;
   border: 1px solid white;
   padding: 10px;
-  background: $cyan;
+  background: #a9a9a9;
   color: white;
 
 
   &:after {
     font-family: 'FontAwesome';
     content: '\f107';
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+    transition: transform 300ms;
+  }
+
+  .collapse-icon {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -123,8 +131,4 @@ strong {
   font-size: 12px;
   background-color: #CBB700;
   color: black;
-}
-
-.code {
-  white-space: pre;
 }

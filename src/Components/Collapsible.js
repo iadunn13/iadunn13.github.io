@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import FontAwesome from 'react-fontawesome';
 import './sass/Collapsible.css';
 
 class Collapsible extends Component {
@@ -172,6 +173,7 @@ class Collapsible extends Component {
           className={triggerClassString.trim()}
           onClick={this.handleTriggerClick}>
           {trigger}
+          
         </span>
 
         {this.renderNonClickableTriggerElement()}

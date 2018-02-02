@@ -26,6 +26,19 @@
   height: 300px;
 }
 
+h2, h4 {
+  color: white;
+}
+
+.description-header {
+  text-align: left;
+}
+
+.active {
+  color: orange;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
