@@ -9,7 +9,7 @@ export default class CoderBytePage extends React.Component {
 		super(props);
 
 		this.render = () => {
-			const repoLink = <a href="https://github.com/iadunn13/coderbyte-challenges">
+			const repoLink = <a target="_blank" href="https://github.com/iadunn13/coderbyte-challenges">
 				https://github.com/iadunn13/coderbyte-challenges
 			</a>;
 			const lastUpdated = "2/1/2018";
