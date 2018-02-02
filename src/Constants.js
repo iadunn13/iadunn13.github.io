@@ -1,1 +1,1 @@
-export const StaticApiBaseUrl = "https://raw.githubusercontent.com/iadunn13/static-api/master";
+export const StaticApiBaseUrl = "https://raw.githubusercontent.com/iadunn13/coderbyte-challenges/master";

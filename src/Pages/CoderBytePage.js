@@ -13,7 +13,7 @@ export default class CoderBytePage extends React.Component {
 		};
 
 		this.getChallengeData = () => {
-			let url = `${StaticApiBaseUrl}/coderbyte-challenges/easy.json`
+			let url = `${StaticApiBaseUrl}/easy.json`
 			return fetch(url).then(response => {
     			if (response.status >= 400) {
       				return [];

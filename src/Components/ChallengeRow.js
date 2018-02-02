@@ -10,7 +10,7 @@ export default class ChallengeRow extends React.Component {
 		super(props);
 
 		this.parseSolution = () => {
-			let solutionLines = this.props.solutionText.replace('\t', '    ').split('\n');
+			let solutionLines = this.props.solutionText.split('\r\n');
 			return _.map(solutionLines, line => (
 				<p className="code">{line}</p>
 			));

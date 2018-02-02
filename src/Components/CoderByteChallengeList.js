@@ -13,9 +13,9 @@ export default class CoderByteChallengeList extends React.Component {
 
 			let challengeRows = _.map(this.props.challenges, challenge => (
 				<ChallengeRow
-					title={challenge.title}
-					challengeText={challenge.challengeText}
-					solutionText={challenge.solutionText}
+					title={challenge['title']}
+					challengeText={challenge['question_text']}
+					solutionText={challenge['solution_text'][0]}
 				/>
 			));
 
