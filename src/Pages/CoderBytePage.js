@@ -22,7 +22,7 @@ export default class CoderBytePage extends React.Component {
 					</Row>
 					<Row>
 						<h4 className="description-header">
-							CoderByte divides their challenges into 3 categories of Easy, Medium, and Hard.  This is a list of my solutions to some of the challenges as of {lastUpdated}.  This list updated via a Python script I wrote to scrape the CoderByte website and produce a JSON file of the relevant data.  The source code for that script, as well as the latest JSON files, can be found at {repoLink}.
+							CoderByte divides their challenges into 3 categories of Easy, Medium, and Hard.  This is a list of my solutions to some of the challenges as of {lastUpdated}.  This list is updated via a Python script I wrote to scrape the CoderByte website and produce JSON files of the relevant data.  The source code for that script, as well as the latest JSON files, can be found at {repoLink}.
 						</h4>
 					</Row>
 					<Route exact path={`${this.props.match.url}`}
