@@ -1,0 +1,13 @@
+.default-key {
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	text-align: center;
+	border-style: solid;
+	margin-right: 3px;
+	margin-left: 3px;
+	border-color: rgb(26, 255, 102);
+	color: rgb(26, 255, 102);
+	border-width: 1px;
+	background-color: black
+}
