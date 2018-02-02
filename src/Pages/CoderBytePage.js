@@ -25,7 +25,23 @@ export default class CoderBytePage extends React.Component {
 							CoderByte divides their challenges into 3 categories of Easy, Medium, and Hard.  This is a list of my solutions to some of the challenges as of {lastUpdated}.  This list updated via a Python script I wrote to scrape the CoderByte website and produce a JSON file of the relevant data.  The source code for that script, as well as the latest JSON files, can be found at {repoLink}.
 						</h4>
 					</Row>
-					
+					<Route exact path={`${this.props.match.url}`}
+						render={() => (
+							<div>
+								<Row>
+									<Col xsOffset={3} xs={2}>
+										<Link className="difficulty-nav" to="/coderbyte/easy"><h3>Easy</h3></Link>
+									</Col>
+									<Col xs={2}>
+										<Link className="difficulty-nav"to="/coderbyte/medium"><h3>Medium</h3></Link>
+									</Col>
+									<Col xs={2}>
+										<Link className="difficulty-nav" to="/coderbyte/hard"><h3>Hard</h3></Link>
+									</Col>
+								</Row>
+							</div>
+						)}
+					/>
 					<Route path="/coderbyte/easy" render={() => <CoderByteChallengeList difficulty="easy"/>} />
 `					<Route path="/coderbyte/medium" render={() => <CoderByteChallengeList difficulty="medium"/>} />
 					<Route path="/coderbyte/hard" render={() => <CoderByteChallengeList difficulty="hard"/>} />
